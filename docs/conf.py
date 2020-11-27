@@ -34,9 +34,7 @@ import re
 import sys
 import subprocess
 # sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('./_ext/skywater_pdk/cells'))
-sys.path.insert(0, os.path.abspath('./_ext/skywater_pdk/cells/generate'))
-
+sys.path.insert(0, os.path.abspath('./_ext'))
 
 # -- Project information -----------------------------------------------------
 
@@ -70,8 +68,8 @@ extensions = [
     'sphinx.ext.todo',
     'sphinxcontrib_hdl_diagrams',
     'sphinxcontrib.bibtex',
-    'cell_cross_index',
-    'generate_cell_readme',
+    #'cell_cross_index',
+    'skywater_pdk.cells.generate.readme',
 ]
 
 bibtex_default_style = 'plain'
