@@ -423,5 +423,5 @@ def setup(app):
     app.add_role('cell', cell_role)
     app.add_role('model', cell_role)
 
-    #build_lib_docs()
+    build_lib_docs()
 
